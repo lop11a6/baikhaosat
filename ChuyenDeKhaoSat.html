@@ -68,7 +68,64 @@
             position: relative;
             z-index: 10;
             border: 2px solid rgba(255, 255, 255, 0.3);
+
         }
+
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px; /* nhỏ hơn để vừa màn hình */
+            }
+
+            h1 {
+                font-size: 1.8em; /* nhỏ hơn để không chiếm quá nhiều */
+            }
+
+            .subtitle {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .shape, .petal, #particles-js {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                margin: 5% 10%;
+                padding: 25px; /* giảm padding để vừa màn hình */
+            }
+
+            .modal h2 {
+                font-size: 1.5em;
+            }
+
+            .modal p {
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            input[type="text"],
+            input[type="date"],
+            textarea {
+                padding: 12px 15px;
+                font-size: 0.95em;
+            }
+
+            .submit-btn {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+        }
+
 
         @keyframes fadeInUp {
             from {
@@ -552,7 +609,7 @@
         </form>
 
         <div class="credit">
-            <p><span class="credit-icon">🎓</span> Thiết kế - Mã nguồn: dphat <span class="credit-icon">🎓</span></p>
+            <p><span class="credit-icon">🎓</span> Khảo sát bởi: Lớp 11A6 - dp <span class="credit-icon">🎓</span></p>
         </div>
     </div>
 
@@ -721,6 +778,4 @@
         });
     </script>
 </body>
-
 </html>
-
